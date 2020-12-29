@@ -385,12 +385,11 @@ h5,
 h6 {
 	font-family: inherit;
 	font-weight: normal;
-	line-height: 1.1 !important;
+	line-height: 1.1rem;
 	color: inherit;
 }
 
 html {
-	overflow-y: hidden;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 }
@@ -403,7 +402,6 @@ body {
 
 html,
 body {
-	height: 100%;
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
@@ -2719,7 +2717,7 @@ input[name="nslookup"] {
 	transition: box-shadow .25s, -webkit-box-shadow .25s;
 	border-radius: 2px;
 	text-align: left;
-	background: #faf5f3c2;
+	background: rgba(255, 255, 255, 0.75);
 	margin: 0;
 }
 
@@ -4026,9 +4024,8 @@ ul.errors li {
 	min-width: 5rem !important;
 }
 
-#cbi-passwall .status .red, #cbi-passwall .status .green {
-	font-size: 0.83rem !important;
-	line-height: 2rem;
+#cbi-passwall .block h4 {
+	padding:0;
 }
 
 .waves-input-wrapper .waves-button-input {
@@ -4109,3 +4106,21 @@ div[id^="cbi-unblockmusic"] .cbi-button {
 	height: 100%;
 }
 
+[data-page="admin-network-wifi"] tr > td .cbi-button{
+	margin-left: 0 !important;
+}
+[data-page="admin-network-wifi"] tr > td input[type="button"]{
+	    padding: 0.5rem 1rem !important;
+}
+table.interfaces .th{
+	padding:1.1em 0.5rem !important;
+}
+.cbi-value-field>div:first-child{
+	 display: inline-flex !important;
+    cursor: pointer;
+}
+.cbi-page-actions.control-group.fixed {
+    position: fixed;
+    bottom: 1.3rem;
+    right: 2rem;
+}
